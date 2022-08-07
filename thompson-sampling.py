@@ -3,6 +3,9 @@ from scipy.stats import beta
 
 np.random.seed(20)
 
+n = 5
+p = [np.random.rand() for i in range(n)]
+
 wins = [0 for i in range(n)]
 losses = [0 for i in range(n)]
 
