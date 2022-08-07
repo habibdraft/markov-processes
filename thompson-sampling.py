@@ -16,4 +16,4 @@ for trial in range(trials):
     losses[choice] += 1-result
 
 pulls = [w + l for w, l in zip(wins, losses)]
-observed_probabilities = [win / pull for win, pull in zip(wins, pulls)]
+observed_probabilities = [w / p for w, p in zip(wins, pulls)]
